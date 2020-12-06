@@ -2202,10 +2202,10 @@ var app = (function () {
     	let t0;
     	let link_action;
     	let t1;
-    	let button0;
+    	let button;
     	let span0;
     	let t2;
-    	let div2;
+    	let div;
     	let ul;
     	let li0;
     	let a1;
@@ -2218,32 +2218,6 @@ var app = (function () {
     	let a2;
     	let t6;
     	let link_action_2;
-    	let t7;
-    	let li2;
-    	let a3;
-    	let t8;
-    	let t9;
-    	let div1;
-    	let a4;
-    	let t10;
-    	let t11;
-    	let a5;
-    	let t12;
-    	let t13;
-    	let div0;
-    	let t14;
-    	let a6;
-    	let t15;
-    	let t16;
-    	let li3;
-    	let a7;
-    	let t17;
-    	let t18;
-    	let form;
-    	let input;
-    	let t19;
-    	let button1;
-    	let t20;
     	let mounted;
     	let dispose;
 
@@ -2251,12 +2225,12 @@ var app = (function () {
     		c: function create() {
     			nav = element("nav");
     			a0 = element("a");
-    			t0 = text("Navbar");
+    			t0 = text("Qora xat");
     			t1 = space();
-    			button0 = element("button");
+    			button = element("button");
     			span0 = element("span");
     			t2 = space();
-    			div2 = element("div");
+    			div = element("div");
     			ul = element("ul");
     			li0 = element("li");
     			a1 = element("a");
@@ -2266,33 +2240,7 @@ var app = (function () {
     			t5 = space();
     			li1 = element("li");
     			a2 = element("a");
-    			t6 = text("Link");
-    			t7 = space();
-    			li2 = element("li");
-    			a3 = element("a");
-    			t8 = text("Dropdown");
-    			t9 = space();
-    			div1 = element("div");
-    			a4 = element("a");
-    			t10 = text("Action");
-    			t11 = space();
-    			a5 = element("a");
-    			t12 = text("Another action");
-    			t13 = space();
-    			div0 = element("div");
-    			t14 = space();
-    			a6 = element("a");
-    			t15 = text("Something else here");
-    			t16 = space();
-    			li3 = element("li");
-    			a7 = element("a");
-    			t17 = text("Disabled");
-    			t18 = space();
-    			form = element("form");
-    			input = element("input");
-    			t19 = space();
-    			button1 = element("button");
-    			t20 = text("Search");
+    			t6 = text("Applications");
     			this.h();
     		},
     		l: function claim(nodes) {
@@ -2300,11 +2248,11 @@ var app = (function () {
     			var nav_nodes = children(nav);
     			a0 = claim_element(nav_nodes, "A", { class: true, href: true });
     			var a0_nodes = children(a0);
-    			t0 = claim_text(a0_nodes, "Navbar");
+    			t0 = claim_text(a0_nodes, "Qora xat");
     			a0_nodes.forEach(detach_dev);
     			t1 = claim_space(nav_nodes);
 
-    			button0 = claim_element(nav_nodes, "BUTTON", {
+    			button = claim_element(nav_nodes, "BUTTON", {
     				class: true,
     				type: true,
     				"data-toggle": true,
@@ -2314,14 +2262,14 @@ var app = (function () {
     				"aria-label": true
     			});
 
-    			var button0_nodes = children(button0);
-    			span0 = claim_element(button0_nodes, "SPAN", { class: true });
+    			var button_nodes = children(button);
+    			span0 = claim_element(button_nodes, "SPAN", { class: true });
     			children(span0).forEach(detach_dev);
-    			button0_nodes.forEach(detach_dev);
+    			button_nodes.forEach(detach_dev);
     			t2 = claim_space(nav_nodes);
-    			div2 = claim_element(nav_nodes, "DIV", { class: true, id: true });
-    			var div2_nodes = children(div2);
-    			ul = claim_element(div2_nodes, "UL", { class: true });
+    			div = claim_element(nav_nodes, "DIV", { class: true, id: true });
+    			var div_nodes = children(div);
+    			ul = claim_element(div_nodes, "UL", { class: true });
     			var ul_nodes = children(ul);
     			li0 = claim_element(ul_nodes, "LI", { class: true });
     			var li0_nodes = children(li0);
@@ -2339,75 +2287,11 @@ var app = (function () {
     			var li1_nodes = children(li1);
     			a2 = claim_element(li1_nodes, "A", { class: true, href: true });
     			var a2_nodes = children(a2);
-    			t6 = claim_text(a2_nodes, "Link");
+    			t6 = claim_text(a2_nodes, "Applications");
     			a2_nodes.forEach(detach_dev);
     			li1_nodes.forEach(detach_dev);
-    			t7 = claim_space(ul_nodes);
-    			li2 = claim_element(ul_nodes, "LI", { class: true });
-    			var li2_nodes = children(li2);
-
-    			a3 = claim_element(li2_nodes, "A", {
-    				class: true,
-    				href: true,
-    				id: true,
-    				role: true,
-    				"data-toggle": true,
-    				"aria-haspopup": true,
-    				"aria-expanded": true
-    			});
-
-    			var a3_nodes = children(a3);
-    			t8 = claim_text(a3_nodes, "Dropdown");
-    			a3_nodes.forEach(detach_dev);
-    			t9 = claim_space(li2_nodes);
-    			div1 = claim_element(li2_nodes, "DIV", { class: true, "aria-labelledby": true });
-    			var div1_nodes = children(div1);
-    			a4 = claim_element(div1_nodes, "A", { class: true, href: true });
-    			var a4_nodes = children(a4);
-    			t10 = claim_text(a4_nodes, "Action");
-    			a4_nodes.forEach(detach_dev);
-    			t11 = claim_space(div1_nodes);
-    			a5 = claim_element(div1_nodes, "A", { class: true, href: true });
-    			var a5_nodes = children(a5);
-    			t12 = claim_text(a5_nodes, "Another action");
-    			a5_nodes.forEach(detach_dev);
-    			t13 = claim_space(div1_nodes);
-    			div0 = claim_element(div1_nodes, "DIV", { class: true });
-    			children(div0).forEach(detach_dev);
-    			t14 = claim_space(div1_nodes);
-    			a6 = claim_element(div1_nodes, "A", { class: true, href: true });
-    			var a6_nodes = children(a6);
-    			t15 = claim_text(a6_nodes, "Something else here");
-    			a6_nodes.forEach(detach_dev);
-    			div1_nodes.forEach(detach_dev);
-    			li2_nodes.forEach(detach_dev);
-    			t16 = claim_space(ul_nodes);
-    			li3 = claim_element(ul_nodes, "LI", { class: true });
-    			var li3_nodes = children(li3);
-    			a7 = claim_element(li3_nodes, "A", { class: true, href: true });
-    			var a7_nodes = children(a7);
-    			t17 = claim_text(a7_nodes, "Disabled");
-    			a7_nodes.forEach(detach_dev);
-    			li3_nodes.forEach(detach_dev);
     			ul_nodes.forEach(detach_dev);
-    			t18 = claim_space(div2_nodes);
-    			form = claim_element(div2_nodes, "FORM", { class: true });
-    			var form_nodes = children(form);
-
-    			input = claim_element(form_nodes, "INPUT", {
-    				class: true,
-    				type: true,
-    				placeholder: true,
-    				"aria-label": true
-    			});
-
-    			t19 = claim_space(form_nodes);
-    			button1 = claim_element(form_nodes, "BUTTON", { class: true, type: true });
-    			var button1_nodes = children(button1);
-    			t20 = claim_text(button1_nodes, "Search");
-    			button1_nodes.forEach(detach_dev);
-    			form_nodes.forEach(detach_dev);
-    			div2_nodes.forEach(detach_dev);
+    			div_nodes.forEach(detach_dev);
     			nav_nodes.forEach(detach_dev);
     			this.h();
     		},
@@ -2416,71 +2300,32 @@ var app = (function () {
     			attr_dev(a0, "href", "/");
     			add_location(a0, file$1, 5, 2, 128);
     			attr_dev(span0, "class", "navbar-toggler-icon");
-    			add_location(span0, file$1, 14, 4, 423);
-    			attr_dev(button0, "class", "navbar-toggler");
-    			attr_dev(button0, "type", "button");
-    			attr_dev(button0, "data-toggle", "collapse");
-    			attr_dev(button0, "data-target", "#navbarSupportedContent");
-    			attr_dev(button0, "aria-controls", "navbarSupportedContent");
-    			attr_dev(button0, "aria-expanded", "false");
-    			attr_dev(button0, "aria-label", "Toggle navigation");
-    			add_location(button0, file$1, 6, 2, 184);
+    			add_location(span0, file$1, 14, 4, 425);
+    			attr_dev(button, "class", "navbar-toggler");
+    			attr_dev(button, "type", "button");
+    			attr_dev(button, "data-toggle", "collapse");
+    			attr_dev(button, "data-target", "#navbarSupportedContent");
+    			attr_dev(button, "aria-controls", "navbarSupportedContent");
+    			attr_dev(button, "aria-expanded", "false");
+    			attr_dev(button, "aria-label", "Toggle navigation");
+    			add_location(button, file$1, 6, 2, 186);
     			attr_dev(span1, "class", "sr-only");
-    			add_location(span1, file$1, 21, 10, 681);
+    			add_location(span1, file$1, 21, 10, 683);
     			attr_dev(a1, "class", "nav-link");
     			attr_dev(a1, "href", "/");
-    			add_location(a1, file$1, 20, 8, 627);
+    			add_location(a1, file$1, 20, 8, 629);
     			attr_dev(li0, "class", "nav-item active");
-    			add_location(li0, file$1, 19, 6, 589);
+    			add_location(li0, file$1, 19, 6, 591);
     			attr_dev(a2, "class", "nav-link");
     			attr_dev(a2, "href", "/apps");
-    			add_location(a2, file$1, 24, 8, 775);
+    			add_location(a2, file$1, 24, 8, 777);
     			attr_dev(li1, "class", "nav-item");
-    			add_location(li1, file$1, 23, 6, 744);
-    			attr_dev(a3, "class", "nav-link dropdown-toggle");
-    			attr_dev(a3, "href", "#");
-    			attr_dev(a3, "id", "navbarDropdown");
-    			attr_dev(a3, "role", "button");
-    			attr_dev(a3, "data-toggle", "dropdown");
-    			attr_dev(a3, "aria-haspopup", "true");
-    			attr_dev(a3, "aria-expanded", "false");
-    			add_location(a3, file$1, 27, 8, 886);
-    			attr_dev(a4, "class", "dropdown-item");
-    			attr_dev(a4, "href", "#");
-    			add_location(a4, file$1, 38, 10, 1224);
-    			attr_dev(a5, "class", "dropdown-item");
-    			attr_dev(a5, "href", "#");
-    			add_location(a5, file$1, 39, 10, 1280);
-    			attr_dev(div0, "class", "dropdown-divider");
-    			add_location(div0, file$1, 40, 10, 1344);
-    			attr_dev(a6, "class", "dropdown-item");
-    			attr_dev(a6, "href", "#");
-    			add_location(a6, file$1, 41, 10, 1388);
-    			attr_dev(div1, "class", "dropdown-menu");
-    			attr_dev(div1, "aria-labelledby", "navbarDropdown");
-    			add_location(div1, file$1, 37, 8, 1152);
-    			attr_dev(li2, "class", "nav-item dropdown");
-    			add_location(li2, file$1, 26, 6, 846);
-    			attr_dev(a7, "class", "nav-link disabled");
-    			attr_dev(a7, "href", "#");
-    			add_location(a7, file$1, 45, 8, 1513);
-    			attr_dev(li3, "class", "nav-item");
-    			add_location(li3, file$1, 44, 6, 1482);
+    			add_location(li1, file$1, 23, 6, 746);
     			attr_dev(ul, "class", "navbar-nav mr-auto");
-    			add_location(ul, file$1, 18, 4, 550);
-    			attr_dev(input, "class", "form-control mr-sm-2");
-    			attr_dev(input, "type", "search");
-    			attr_dev(input, "placeholder", "Search");
-    			attr_dev(input, "aria-label", "Search");
-    			add_location(input, file$1, 49, 6, 1640);
-    			attr_dev(button1, "class", "btn btn-outline-success my-2 my-sm-0");
-    			attr_dev(button1, "type", "submit");
-    			add_location(button1, file$1, 54, 6, 1777);
-    			attr_dev(form, "class", "form-inline my-2 my-lg-0");
-    			add_location(form, file$1, 48, 4, 1593);
-    			attr_dev(div2, "class", "collapse navbar-collapse");
-    			attr_dev(div2, "id", "navbarSupportedContent");
-    			add_location(div2, file$1, 17, 2, 478);
+    			add_location(ul, file$1, 18, 4, 552);
+    			attr_dev(div, "class", "collapse navbar-collapse");
+    			attr_dev(div, "id", "navbarSupportedContent");
+    			add_location(div, file$1, 17, 2, 480);
     			attr_dev(nav, "class", "navbar navbar-expand-lg navbar-light bg-light");
     			add_location(nav, file$1, 4, 0, 65);
     		},
@@ -2489,11 +2334,11 @@ var app = (function () {
     			append_dev(nav, a0);
     			append_dev(a0, t0);
     			append_dev(nav, t1);
-    			append_dev(nav, button0);
-    			append_dev(button0, span0);
+    			append_dev(nav, button);
+    			append_dev(button, span0);
     			append_dev(nav, t2);
-    			append_dev(nav, div2);
-    			append_dev(div2, ul);
+    			append_dev(nav, div);
+    			append_dev(div, ul);
     			append_dev(ul, li0);
     			append_dev(li0, a1);
     			append_dev(a1, t3);
@@ -2503,32 +2348,6 @@ var app = (function () {
     			append_dev(ul, li1);
     			append_dev(li1, a2);
     			append_dev(a2, t6);
-    			append_dev(ul, t7);
-    			append_dev(ul, li2);
-    			append_dev(li2, a3);
-    			append_dev(a3, t8);
-    			append_dev(li2, t9);
-    			append_dev(li2, div1);
-    			append_dev(div1, a4);
-    			append_dev(a4, t10);
-    			append_dev(div1, t11);
-    			append_dev(div1, a5);
-    			append_dev(a5, t12);
-    			append_dev(div1, t13);
-    			append_dev(div1, div0);
-    			append_dev(div1, t14);
-    			append_dev(div1, a6);
-    			append_dev(a6, t15);
-    			append_dev(ul, t16);
-    			append_dev(ul, li3);
-    			append_dev(li3, a7);
-    			append_dev(a7, t17);
-    			append_dev(div2, t18);
-    			append_dev(div2, form);
-    			append_dev(form, input);
-    			append_dev(form, t19);
-    			append_dev(form, button1);
-    			append_dev(button1, t20);
 
     			if (!mounted) {
     				dispose = [
@@ -3462,7 +3281,7 @@ var app = (function () {
     		},
     		h: function hydrate() {
     			attr_dev(h1, "class", "svelte-4vhev");
-    			add_location(h1, file$5, 54, 8, 1157);
+    			add_location(h1, file$5, 54, 8, 1167);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -3498,7 +3317,7 @@ var app = (function () {
     	return block;
     }
 
-    // (58:6) {#if !$userToken}
+    // (58:6) {#if $userToken}
     function create_if_block$2(ctx) {
     	let route;
     	let current;
@@ -3541,7 +3360,7 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(58:6) {#if !$userToken}",
+    		source: "(58:6) {#if $userToken}",
     		ctx
     	});
 
@@ -3620,7 +3439,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	let if_block = !/*$userToken*/ ctx[3] && create_if_block$2(ctx);
+    	let if_block = /*$userToken*/ ctx[3] && create_if_block$2(ctx);
 
     	const block = {
     		c: function create() {
@@ -3648,7 +3467,7 @@ var app = (function () {
     			this.h();
     		},
     		h: function hydrate() {
-    			add_location(div, file$5, 49, 4, 1044);
+    			add_location(div, file$5, 49, 4, 1054);
     		},
     		m: function mount(target, anchor) {
     			mount_component(nav, target, anchor);
@@ -3677,7 +3496,7 @@ var app = (function () {
 
     			route1.$set(route1_changes);
 
-    			if (!/*$userToken*/ ctx[3]) {
+    			if (/*$userToken*/ ctx[3]) {
     				if (if_block) {
     					if (dirty & /*$userToken*/ 8) {
     						transition_in(if_block, 1);
@@ -3763,7 +3582,7 @@ var app = (function () {
     		},
     		h: function hydrate() {
     			attr_dev(main, "class", "svelte-4vhev");
-    			add_location(main, file$5, 46, 0, 1004);
+    			add_location(main, file$5, 46, 0, 1014);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
@@ -3839,6 +3658,7 @@ var app = (function () {
     		Router,
     		Route,
     		Link,
+    		navigate,
     		onMount,
     		Nav,
     		Home,
